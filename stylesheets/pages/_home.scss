@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-color: $background-gray;
+  width: 1200px;
+//   height: 200vh;
+  margin: 0px auto;
+}
+
+.introduction {
+    padding: 60px;
+
+    p {
+        font-family: 'Moderat', Fallback, sans-serif;
+        font-size: $font-size-large;
+        color: $gray;
+        margin: 0;
+
+        line-height: 1.4;
+        letter-spacing: -1px;
+
+        &:not(last-of-type) {
+            margin-bottom: 60px;
+        }
+    }
+}

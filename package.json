@@ -1,0 +1,51 @@
+{
+  "name": "lesprit.me",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass stylesheets/main.scss dist/css/main.css",
+    "autoprefixer": "postcss -u autoprefixer -r dist/css/main.css",
+    "eslint": "eslint js",
+    "icons": "svgo -f images/icons &amp;&amp; mkdir -p dist/images && svg-sprite-generate -d images/icons -o dist/images/icons.svg",
+    "serve": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js'",
+    "stylelint": "stylelint stylesheets/**/*.scss --config .stylelintrc.json; exit 0",
+    "build:scss": "npm run scss && npm run stylelint && npm run autoprefixer",
+    "build:js": "npm run eslint",
+    "build:images": "npm run icons",
+    "watch:scss": "onchange 'stylesheets/*/*.scss' -- npm run build:scss",
+    "watch:js": "onchange 'js/*.js' -- npm run build:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lespritdescalier/lesprit.me.git"
+  },
+  "keywords": [
+    "lesprit",
+    "personal",
+    "site"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lespritdescalier/lesprit.me/issues"
+  },
+  "homepage": "https://github.com/lespritdescalier/lesprit.me#readme",
+  "dependencies": {
+    "node-sass": "^4.7.2",
+    "stylelint": "^8.3.1",
+    "stylelint-config-sass-guidelines": "^4.0.1",
+    "stylelint-order": "^0.8.0",
+    "stylelint-scss": "^2.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "browser-sync": "^2.18.13",
+    "eslint": "^4.13.1",
+    "onchange": "^3.3.0",
+    "postcss-cli": "^4.1.1",
+    "svg-sprite-generator": "0.0.7",
+    "svgo": "^1.0.3"
+  }
+}
