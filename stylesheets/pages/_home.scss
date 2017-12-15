@@ -4,13 +4,14 @@
 
 body {
   background-color: $background-gray;
-  width: 1200px;
+  max-width: $max-width;
 //   height: 200vh;
   margin: 0 auto;
 }
 
 .introduction {
     padding: 60px;
+    height: 100vh;
 
     p {
         font-family: 'Moderat', Fallback, sans-serif;
