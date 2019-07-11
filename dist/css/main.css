@@ -496,6 +496,9 @@ body {
   background-color: #EAEAEA;
   max-width: 1024px; }
 
+p {
+  margin: 0; }
+
 .introduction {
   padding: 60px;
   height: 100vh; }
@@ -517,13 +520,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .secret__heading, .secret__subheading {
+  .secret__heading, .secret__subheading, .secret__button {
     font-family: 'Moderat', Fallback, sans-serif;
     font-size: 48px;
     color: red;
     margin-bottom: 32px; }
   .secret__container {
-    width: 33.333%; }
+    width: 50%; }
   .secret__svg {
     width: 80px; }
   .secret__svg-container {
@@ -531,6 +534,13 @@ body {
     width: 100%;
     flex-direction: row;
     align-items: flex-start; }
+  .secret__button {
+    border: 2px solid red;
+    border-radius: 8px;
+    background: transparent;
+    width: 100%;
+    font-size: 40px;
+    padding: 16px; }
 
 @media (max-width: 768px) {
   .secret {

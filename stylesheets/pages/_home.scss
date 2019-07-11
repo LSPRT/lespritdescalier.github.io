@@ -7,6 +7,10 @@ body {
   max-width: $max-width;
 }
 
+p {
+    margin: 0;
+}
+
 .introduction {
     padding: 60px;
     height: 100vh;
