@@ -569,10 +569,7 @@ body {
   animation-fill-mode: forwards;
   -webkit-animation-duration: 0.6s;
   -moz-animation-duration: 0.6s;
-  animation-duration: 0.6s;
-  -webkit-animation-delay: 0.6s;
-  -moz-animation-delay: 0.6s;
-  animation-delay: 0.6s; }
+  animation-duration: 0.6s; }
 
 .rotate {
   -webkit-animation-name: rotate;
