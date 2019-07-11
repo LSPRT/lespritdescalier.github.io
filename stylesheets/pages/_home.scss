@@ -15,6 +15,11 @@ body {
 
     p {
         font-family: 'Moderat', Fallback, sans-serif;
+        src:    url('fonts/Moderat-Regular.eot');
+        src:    url('fonts/Moderat-Regular.eot?#iefix') format('embedded-opentype'),
+                url('fonts/Moderat-Regular.woff') format('woff'),
+                url('fonts/Moderat-Regular.ttf') format('truetype'),
+                url('fonts/Moderat-Regular.svg#Moderat') format('svg');
         font-size: $font-size-large;
         color: $black;
         margin: 0;
