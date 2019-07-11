@@ -494,8 +494,7 @@ a {
 
 body {
   background-color: #EAEAEA;
-  max-width: 1024px;
-  margin: 0 auto; }
+  max-width: 1024px; }
 
 .introduction {
   padding: 60px;
@@ -511,6 +510,7 @@ body {
       margin-bottom: 60px; }
 
 .secret {
+  padding: 40px;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -519,11 +519,11 @@ body {
   align-items: center; }
   .secret__heading, .secret__subheading {
     font-family: 'Moderat', Fallback, sans-serif;
-    font-size: 2rem;
+    font-size: 48px;
     color: red;
     margin-bottom: 32px; }
   .secret__container {
-    width: 400px; }
+    width: 33.333%; }
   .secret__svg {
     width: 80px; }
   .secret__svg-container {
@@ -531,6 +531,17 @@ body {
     width: 100%;
     flex-direction: row;
     align-items: flex-start; }
+
+@media (max-width: 768px) {
+  .secret {
+    justify-content: flex-start; }
+    .secret__container {
+      width: 100%; }
+    .secret__heading, .secret__subheading {
+      font-family: 'Moderat', Fallback, sans-serif;
+      font-size: 40px;
+      color: red;
+      margin-bottom: 32px; } }
 
 @-webkit-keyframes fadeIn {
   from {
