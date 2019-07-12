@@ -528,7 +528,13 @@ p {
     width: 100%;
     max-width: 768px; }
   .secret__svg {
-    width: 96px; }
+    cursor: pointer;
+    width: 96px;
+    transition: .2s ease; }
+    .secret__svg:hover {
+      transform: scale(1.05); }
+    .secret__svg:active {
+      transform: scale(0.95); }
   .secret__svg-container {
     display: flex;
     width: 100%;
