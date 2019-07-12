@@ -535,8 +535,7 @@ p {
     flex-direction: row;
     justify-content: center; }
   .secret__hearts {
-    text-align: center;
-    white-space: nowrap; }
+    text-align: center; }
   .secret__button {
     outline: none;
     border: 2px solid red;
@@ -547,9 +546,7 @@ p {
     padding: 16px; }
 
 @media (min-width: 768px) {
-  __heading,
-  __subheading,
-  __button {
+  .secret__heading, .secret__subheading, .secret__button {
     font-family: 'Moderat', Fallback, sans-serif;
     font-size: 40px;
     color: red;
