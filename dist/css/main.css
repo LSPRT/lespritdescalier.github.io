@@ -535,22 +535,19 @@ p {
     flex-direction: row;
     justify-content: center; }
   .secret__hearts {
-    text-align: center; }
+    text-align: center;
+    font-size: 40px; }
   .secret__button {
     outline: none;
     border: 2px solid red;
     border-radius: 8px;
     background: transparent;
     width: 100%;
-    font-size: 40px;
     padding: 16px; }
 
 @media (min-width: 768px) {
   .secret__heading, .secret__subheading, .secret__button {
-    font-family: 'Moderat', Fallback, sans-serif;
-    font-size: 40px;
-    color: red;
-    margin-bottom: 36px; } }
+    font-size: 40px; } }
 
 @media (min-width: 1024px) {
   .secret {
