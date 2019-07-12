@@ -529,11 +529,17 @@ p {
     max-width: 768px; }
   .secret__svg {
     cursor: pointer;
-    width: 96px;
-    transition: .2s ease; }
-    .secret__svg:hover {
+    width: 96px; }
+  .secret__svg-button {
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+    background: transparent;
+    transition: .2s ease;
+    transform: scale(1); }
+    .secret__svg-button:hover {
       transform: scale(1.05); }
-    .secret__svg:active {
+    .secret__svg-button:active {
       transform: scale(0.95); }
   .secret__svg-container {
     display: flex;
