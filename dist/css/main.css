@@ -538,6 +538,8 @@ p {
     text-align: center;
     font-size: 40px; }
   .secret__button {
+    display: block;
+    text-align: center;
     cursor: pointer;
     outline: none;
     border: 2px solid red;
@@ -545,13 +547,13 @@ p {
     background: transparent;
     width: 100%;
     padding: 16px; }
-    .secret__button:active, .secret__button:visited {
+    .secret__button:active, .secret__button:focus {
       background: red;
       color: #EAEAEA; }
-      .secret__button:active::after, .secret__button:visited::after {
+      .secret__button:active::after, .secret__button:focus::after {
         content: 'You\'re cute but also cool';
         color: #EAEAEA; }
-      .secret__button:active .secret__button-text, .secret__button:visited .secret__button-text {
+      .secret__button:active .secret__button-text, .secret__button:focus .secret__button-text {
         display: none; }
 
 @media (min-width: 768px) {
