@@ -551,7 +551,7 @@ p {
       .secret__button:active::after, .secret__button:visited::after {
         content: 'You\'re cute but also cool';
         color: #EAEAEA; }
-      .secret__button:active__button-text, .secret__button:visited__button-text {
+      .secret__button:active .secret__button-text, .secret__button:visited .secret__button-text {
         display: none; }
 
 @media (min-width: 768px) {
