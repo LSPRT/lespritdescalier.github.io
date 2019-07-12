@@ -538,12 +538,21 @@ p {
     text-align: center;
     font-size: 40px; }
   .secret__button {
+    cursor: pointer;
     outline: none;
     border: 2px solid red;
     border-radius: 8px;
     background: transparent;
     width: 100%;
     padding: 16px; }
+    .secret__button:active, .secret__button:visited {
+      background: red;
+      color: #EAEAEA; }
+      .secret__button:active::after, .secret__button:visited::after {
+        content: 'You\'re cute but also cool';
+        color: #EAEAEA; }
+      .secret__button:active__button-text, .secret__button:visited__button-text {
+        display: none; }
 
 @media (min-width: 768px) {
   .secret__heading, .secret__subheading, .secret__button {
