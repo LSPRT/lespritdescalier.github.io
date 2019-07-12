@@ -547,15 +547,23 @@ p {
     background: transparent;
     width: 100%;
     height: 108px;
-    padding: 0 32px; }
+    padding: 0 32px;
+    transition: .2s ease; }
     .secret__button:active, .secret__button:focus {
       background: red;
-      color: #EAEAEA; }
+      color: #EAEAEA;
+      transition: .2s ease; }
       .secret__button:active::after, .secret__button:focus::after {
-        content: 'You\'re cute but also cool';
+        content: 'You\'re cute but also kinda cool';
         color: #EAEAEA; }
       .secret__button:active .secret__button-text, .secret__button:focus .secret__button-text {
         display: none; }
+    .secret__button:hover {
+      transform: scale(1.05);
+      transition: .2s ease; }
+    .secret__button:active {
+      transform: scale(0.95);
+      transition: .2s ease; }
 
 @media (min-width: 768px) {
   .secret__heading, .secret__subheading, .secret__button {
@@ -566,10 +574,7 @@ p {
 
 @media (min-width: 1024px) {
   .secret {
-    justify-content: flex-start; }
-    .secret__heading, .secret__subheading, .secret__button {
-      font-size: 40px;
-      margin-bottom: 32px; } }
+    justify-content: flex-start; } }
 
 @-webkit-keyframes fadeIn {
   from {
