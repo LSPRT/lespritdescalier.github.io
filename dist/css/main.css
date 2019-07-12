@@ -538,7 +538,7 @@ p {
     transition: .2s ease;
     transform: scale(1); }
     .secret__svg-button:hover {
-      transform: scale(1.05); }
+      transform: scale(1.25); }
     .secret__svg-button:active {
       transform: scale(0.95); }
   .secret__svg-container {
