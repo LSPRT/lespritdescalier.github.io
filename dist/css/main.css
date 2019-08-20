@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .show-on-mobile {
   display: none; }
   @media (max-width: 767px) {
@@ -512,9 +513,14 @@ p {
     .introduction p:not(last-of-type) {
       margin-bottom: 60px; }
 
+.secret--bday {
+  animation: hue .5s infinite;
+  background: pink; }
+
 .secret {
   padding: 40px;
   width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -565,17 +571,17 @@ p {
       background: red;
       color: #EAEAEA;
       transition: .2s ease; }
-      .secret__button:active::after, .secret__button:focus::after {
-        content: 'You\'re cute but also kinda cool';
-        color: #EAEAEA; }
-      .secret__button:active .secret__button-text, .secret__button:focus .secret__button-text {
-        display: none; }
     .secret__button:hover {
       transform: scale(1.05);
       transition: .2s ease; }
     .secret__button:active {
       transform: scale(0.95);
       transition: .2s ease; }
+  .secret__button--message:active::after, .secret__button--message:focus::after {
+    content: '*:・ﾟ✧ Happy Birthday, bby!!! ✧・ﾟ:*';
+    color: #EAEAEA; }
+  .secret__button--message:active .secret__button-text, .secret__button--message:focus .secret__button-text {
+    display: none; }
 
 @media (min-width: 768px) {
   .secret__heading, .secret__subheading, .secret__button {
@@ -632,3 +638,17 @@ p {
   -webkit-animation-duration: 12s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear; }
+
+@keyframes hue {
+  0%, 100% {
+    -webkit-filter: hue-rotate(0deg); }
+  50% {
+    -webkit-filter: hue-rotate(360deg); } }
+
+.bday {
+  pointer-events: none;
+  visibility: hidden; }
+
+.bday--visible {
+  pointer-events: all;
+  visibility: visible; }
