@@ -436,12 +436,12 @@ a {
   unicode-range: U+0020-00FE; }
 
 @font-face {
-  font-family: 'Moderat-Bold';
+  font-family: 'Moderat';
   src: url("/fonts/Moderat-Bold.eot");
   /* IE9 Compat Modes */
   src: url("/fonts/Moderat-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Moderat-Bold.woff") format("woff"), url("/fonts/Moderat-Bold.ttf") format("truetype"), url("/fonts/Moderat-Bold.svg#webfont") format("svg");
   /* Legacy iOS */
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   font-stretch: normal;
   unicode-range: U+0020-00FE; }
@@ -710,9 +710,9 @@ body {
   z-index: 200; }
 
 .title {
-  font-family: 'Moderat-Bold', Fallback, sans-serif;
+  font-family: 'Moderat', Fallback, sans-serif;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 600;
   margin-top: 32px;
   color: black;
   text-align: center;
