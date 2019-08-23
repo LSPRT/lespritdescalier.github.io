@@ -8,7 +8,8 @@
 .main {
   width: 100vw;
    min-height: 120vh;
-  height: auto;
+  display: flex;
+    justify-content: center;
 }
 
 .flex-container {
@@ -167,6 +168,8 @@ text {
 }
 
 .title-button {
+    position: absolute;
+    top: 70%;
     width: fit-content;
     margin: 0 auto;
 }
