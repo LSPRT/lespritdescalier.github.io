@@ -710,7 +710,7 @@ body {
   z-index: 200; }
 
 .title {
-  font-family: 'Moderat', Fallback, sans-serif;
+  font-family: 'Moderat-Bold', Fallback, sans-serif;
   font-size: 56px;
   font-weight: 600;
   margin-top: 32px;
