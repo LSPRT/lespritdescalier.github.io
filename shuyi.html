@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuyi Shao</title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#ffae29">
+
+    <!-- Your styles -->
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+    <div class="main" id="main">
+       <div class="flex-container">
+          <button onclick="paint()" class="button" id="button">
+             <div class="scroll"></div>
+          </button>
+       </div>
+       <div class="title-button" onclick="scrollToIntro()">
+          <h1 class="title">Shuyi Shao</h1>
+       </div>
+    </div>
+
+    <div class="intro" id="intro">
+        <p class="intro__text">I'm a fashion design graduate curious about making things work better with people.
+        </p>
+    </div>
+
+    <!-- build:js scripts/main.min.js -->
+    <script src="dist/js/shuyi.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
